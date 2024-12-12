@@ -1,0 +1,27 @@
+import math
+
+def promedio(lista):
+    return sum(lista) / len(lista)
+
+def mediana(lista):
+    mayor = max(lista)
+    menor = min(lista)
+    if len(lista) % 2 == 1:
+        return mayor  
+    else:
+        return (mayor + menor) / 2
+
+def prom_multiplicativo(lista):
+    producto = 1
+    for num in lista:
+        producto *= num
+    return producto ** (1 / len(lista))
+
+def potencia(lista):
+    mayor = max(lista)
+    menor = min(lista)
+    return mayor ** menor
+
+def raiz_3(lista):
+    menor = min(lista)
+    return menor ** (1 / 3)
